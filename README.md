@@ -1,3 +1,13 @@
+# Training
+I used :
+- Laravel 8
+- Node.js v12.18.4
+- npm 6.14.8
+- Composer 2.0.14
+- Bootstrap ^4.0.0
+- jQuery ^3.2
+- jQuery UI ^1.12.1
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

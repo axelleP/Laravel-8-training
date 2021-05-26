@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ArticlesController;
+
+Route::get('/', [ArticlesController::class, 'showList']);
+Route::get('/articles/showList', [ArticlesController::class, 'showList']);
