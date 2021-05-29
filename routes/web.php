@@ -11,7 +11,12 @@
 |
 */
 
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ArticleController;
 
-Route::get('/', [ArticlesController::class, 'showList']);
-Route::get('/articles/showList', [ArticlesController::class, 'showList']);
+Route::get('/', [ArticleController::class, 'showList']);
+Route::get('/articles/liste', [ArticleController::class, 'showList']);
+
+//affiche le formulaire
+Route::get('/articles/formulaire', [ArticleController::class, 'showForm']);
+//soumet le formulaire
+Route::post('/articles/formulaire', [ArticleController::class, 'create']);

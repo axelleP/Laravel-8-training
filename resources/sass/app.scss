@@ -6,3 +6,28 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+/* vignette */
+.vignette {
+    box-shadow: 2px 2px 8px 0 rgb(0, 0, 0, 20%);
+    border-radius: 0;
+}
+
+.card-body {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.card-title {
+    color: grey;
+    font-weight: normal;
+}
+
+.card-prix {
+    color: black;
+    font-weight: bold;
+}
+
+.embed-responsive .card-img-top {
+    object-fit: contain; /* définit la façon dont l'image doit s'adapter à son conteneur */
+}
