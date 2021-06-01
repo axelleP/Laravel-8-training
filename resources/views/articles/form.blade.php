@@ -3,10 +3,14 @@
 @section('title', 'Liste des articles')
 
 @section('content')
+    <?php //echo $errors //utile pour voir toutes les erreurs ?>
+
     <h2 class="mb-4"><u class="h3">Ajouter un article :</u></h2>
 
-    <form action="{{ url('/articles/formulaire') }}" method="POST">
+    <form action="{{ url('/articles/formulaire') }}" method="POST" enctype="multipart/form-data">
         @csrf
+
+        <input name="a_date_creation" type="hidden" value="{{ $article->a_date_creation }}">
 
         <label for="a_nom">{{ $article->getLabel('a_nom') }}</label>
         <input type="text" class="form-control @error('a_nom') is-invalid @enderror" name="a_nom" value="{{ old('a_nom') }}">

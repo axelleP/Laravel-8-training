@@ -20,3 +20,5 @@ Route::get('/articles/liste', [ArticleController::class, 'showList']);
 Route::get('/articles/formulaire', [ArticleController::class, 'showForm']);
 //soumet le formulaire
 Route::post('/articles/formulaire', [ArticleController::class, 'create']);
+
+Route::post('/articles/supprimer', [ArticleController::class, 'delete']);
